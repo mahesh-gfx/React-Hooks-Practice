@@ -6,6 +6,12 @@ const UseEffectExamples = () => {
   const [place, setPlace] = useState("");
 
   useEffect(() => {
+    console.log("I run after Every change");
+  });
+
+  useEffect(() => {});
+  useEffect(() => {
+    console.log("I run only when the dependencies update 1");
     const getLocation = async () => {
       var options = {
         enableHighAccuracy: true,
@@ -45,6 +51,7 @@ const UseEffectExamples = () => {
   }, [place]);
 
   useEffect(() => {
+    console.log("I run only when the dependencies update 2");
     const checkWeather = () => {
       var url = `http://api.weatherapi.com/v1/current.json?key=981c56aab5ba4484a7a105826210109&q=${place}`;
       fetch(url)

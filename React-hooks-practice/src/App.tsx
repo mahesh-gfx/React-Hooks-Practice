@@ -7,6 +7,7 @@ function App() {
       <h1>useState Examples</h1>
       <UseStateExample />
       <h1>useEffect Examples</h1>
+      <small>Check Console Log...</small>
       <UseEffectExamples />
     </div>
   );
