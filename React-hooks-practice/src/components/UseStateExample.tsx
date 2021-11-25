@@ -3,7 +3,6 @@ import { useState } from "react";
 const UseStateExample = () => {
   const [counter, setCounter] = useState(0);
   const [toggle, toggleSetter] = useState("false");
-  const [name, setName] = useState("");
   const [personObject, setPerson] = useState({});
 
   const _onClick = () => {
@@ -45,8 +44,6 @@ const UseStateExample = () => {
         </label>
         <button type="submit">Submit</button>
       </form>
-
-      <p>{name}</p>
     </>
   );
 };

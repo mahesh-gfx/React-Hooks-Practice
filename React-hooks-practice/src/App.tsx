@@ -1,12 +1,15 @@
-import './App.css';
-import UseStateExample from './components/UseStateExample';
+import "./App.css";
+import UseEffectExamples from "./components/UseEffectExamples";
+import UseStateExample from "./components/UseStateExample";
 function App() {
-  
   return (
     <div className="App">
-      <UseStateExample/>
+      <h1>useState Examples</h1>
+      <UseStateExample />
+      <h1>useEffect Examples</h1>
+      <UseEffectExamples />
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
