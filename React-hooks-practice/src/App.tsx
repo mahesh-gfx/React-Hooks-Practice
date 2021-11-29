@@ -1,7 +1,7 @@
 import "./App.css";
-import UseEffectExamples from "./components/UseEffectExamples";
+import UseEffectExamples from "./components/UseEffectExamples/UseEffectExamples";
 import UseMemoExamples from "./components/UseMemoExample/UseMemoExamples";
-import UseStateExample from "./components/UseStateExample";
+import UseStateExample from "./components/UseEffectExamples/UseStateExample";
 function App() {
   return (
     <div className="App">
