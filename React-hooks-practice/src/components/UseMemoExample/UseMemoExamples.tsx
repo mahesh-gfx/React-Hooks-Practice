@@ -2,7 +2,6 @@ import { useState, useMemo } from "react";
 import Child from "./Child";
 
 const UseMemoExamples = () => {
-  const [pos, setPos] = useState(0);
   const [search, searchSetter] = useState("");
 
   const countryList = [
@@ -263,7 +262,6 @@ const UseMemoExamples = () => {
     const out = countryList.map((item, index) => {
       if (item == search) {
         console.log("Index: ", index);
-        setPos(index);
         flag = 0;
         console.log("Flag:", flag);
         return <>Item found at {index}</>;
